@@ -28,7 +28,7 @@ function convertPokemonDetailToLi(pokemon) {
     //convert pokemon number to string and format number 
     var number = pokemon.number
     var numberToString = number.toString();
-    var NumberFormated = numberToString.padStart(3, '0')
+    var numberFormated = numberToString.padStart(3, '0')
 
     //convert pokemon height to meter
     var height = pokemon.height
@@ -41,7 +41,7 @@ function convertPokemonDetailToLi(pokemon) {
     //generate html content
     return `
         <div class="pokemonDetail ${pokemon.type}">
-            <div class="number">#${NumberFormated}</div>
+            <div class="number">#${numberFormated}</div>
             <span class="name">${pokemon.name}</span>
             <div class="detail"> 
                 <img src="${pokemon.photo}"
