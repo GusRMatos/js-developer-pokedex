@@ -4,16 +4,85 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-color: #fff; 
 }
-
 .content {
+    background-color: #fff;
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+    
 }
+.header{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 2rem;
+}
+.pokedextitle{
+    color: #000;
+    text-shadow: 4px 1px 4px gray;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: auto;
+    border-radius: 10rem;
+    
+}
+.windowDescription{
+    background-color: #00000080;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.description{
+    background-color: #DCDCDC;
+    justify-content:center;
+    align-items: center;
+    width: 25rem;
+    height: 70%;
+    min-width: 300px;
+    border-radius: 1rem;
+}
+.windowDescription.open{
+    display: flex;
+}
+.changeTheme{
+    background-color: #000;
 
+    .content {
+        background-color: #000;
+        width: 100vw;
+        height: 100vh;
+        padding: 1rem;
+    }
+    .pokedextitle{
+        color: #fff;
+        text-shadow: 4px 1px 4px gray;
+        text-align: center;
+        margin: auto;
+        font-size: 1.2rem;
+        border-radius: 10rem;   
+    }
+}
+.open .description{
+    animation: openModal 0.5s;
+}
+@keyFrames openModal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;

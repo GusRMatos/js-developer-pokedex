@@ -1,8 +1,12 @@
 
 class Pokemon {
+    height;
     number;
     name;
-    type;
-    types = [];
     photo;
+    types = [];
+    type;
+    weigth;
 }
+
+

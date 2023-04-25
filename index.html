@@ -20,12 +20,20 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/pokemon.css">
 </head>
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
 
+        <div class="header">
+            <div class = "pokedextitle">
+                <h1>Pokedex</h1>    
+            </div>
+            <div class="theme">
+                <button id = changeThemebutton type="button">Theme</button>
+            </div>
+        </div>
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
@@ -36,6 +44,14 @@
             </button>
         </div>
     </section>
+    
+    <div class="windowDescription" id="windowDescription">
+        <div class="description">
+            <div id="pokemonListDetail" class="pokemonDetail">
+                <!-- ..... Pokemons here ..... -->
+            </div>
+        </div>
+    </div>
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
